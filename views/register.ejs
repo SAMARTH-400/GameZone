@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+    <div class="background">
+      background <img class="bg" src="img/bg.jpg">
+    </div>
+    <form action="/register" method="POST" autocomplete="off"> 
+      <h3>REGISTER</h3>
+      <label for="username">Username</label>
+      <input type="email" placeholder="Email or Phone" id="username" name="username">
+      
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" name="password">
+      
+      <button type="submit" class="btn btn-dark btn-sm">Register</button>
+      <a href="/login"class="black">Already a user?</a>
+      <div class="social">
+        <div class="go">
+          <a href="/auth/google" role="button">
+            <i class="fab fa-google"></i>  
+            Google
+          </a> 
+        </div>
+        <div class="fb">
+          <i class="fab fa-facebook"></i>
+          Facebook
+        </div>
+      </div>
+    </form>
+<%- include('partials/header') %>
+
